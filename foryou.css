@@ -50,7 +50,11 @@ html {
     margin-top: 1rem;
     margin-bottom: 1rem;
     max-height: 100%;
-    width: 45%;
+    width: 47%;
+}
+
+.small {
+    width: 20%;
 }
 
 .posts {
@@ -88,14 +92,14 @@ border-radius: 12px;
 }
 
 #title {
-    text-align: center;
+    text-align: left;
     color: #643c16;
     font-size: 3rem;
 }
 #subtitle {
-    text-align: left;
+    text-align: center;
     color: #331E0A;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 
