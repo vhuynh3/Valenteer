@@ -9,36 +9,45 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div align = "left">
-        Volunteer
+    <header>
+      <div class="navbar">
+        <div align = "left">
+          <a href="#search">
+            <img src="search.png" height="30" width="30">
+          </a>
+        </div>
+        <div class="navbar-right">
+          <a href="#search">
+            <img src="search.png" height="30" width="30">
+          </a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img src="dropdownmenu.png" height="30" width="30">
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Sign In</a>
+              <a href="#">About Us</a>
+            </div>
+          </div> 
+        </div>
       </div>
-      <div class="navbar-right">
-        <a href="#news">Search</a>
-        <div class="dropdown">
-          <button class="dropbtn">Dropdown 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div> 
-      </div>
-    </div>
+    </header>
 
     <div id = "connections" align = "center">
+      <br>
       <label id = "connectLabel"> Connections </label>
-      <ul id = "connectList" align = "left">
-        <li><input type="checkbox"> Friend1</li>
-        <li><input type="checkbox"> Friend2</li>
-        <li><input type="checkbox"> Friend3</li>
-        <li><input type="checkbox"> Friend4</li>
-        <li><input type="checkbox"> Activity1</li>
-        <li><input type="checkbox"> Activity2</li>
-        <li><input type="checkbox"> Activity3</li>
-      </ul>
+      <div class = "content">
+        <ul id = "connectList" align = "left">
+          <li><input type="checkbox"> Friend1</li>
+          <li><input type="checkbox"> Friend2</li>
+          <li><input type="checkbox"> Friend3</li>
+          <li><input type="checkbox"> Friend4</li>
+          <li><input type="checkbox"> Activity1</li>
+          <li><input type="checkbox"> Activity2</li>
+          <li><input type="checkbox"> Activity3</li>
+        </ul>
+      </div>
     </div>
     
     <div id="container"></div>
