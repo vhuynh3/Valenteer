@@ -51,6 +51,15 @@ html {
 
 }
 
+.category{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  overflow-y: scroll;
+}
+
 #connectLabel {
   margin-top: 20px;
   margin: center;
