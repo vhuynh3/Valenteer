@@ -73,6 +73,17 @@ html {
   border-radius: 12px;
 }
 
+#title {
+  text-align: center;
+  color: #643c16;
+  font-size: 5rem;
+}
+#subtitle {
+  text-align: center;
+  color: #331E0A;
+  font-size: 2.5rem;
+}
+
 #text {
   color: #643c16;
   font-size: 1.75rem;
