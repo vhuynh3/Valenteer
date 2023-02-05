@@ -5,69 +5,139 @@
     <link rel="stylesheet" href="maps.css">
     <link rel="stylesheet" href="navbar.css">
     <script src="script.js"></script>
-    <!-- INSERT MAP API HERE -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=APIKEYHERE"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXxJR-rtfO8x3cvURrJhaSGvwGjlbLcCc"></script>
     <div id = "index">
   </head>
   
   <body onload="initMap();">
     <header class="header">
-        <div class="navbar">
-            <div align = "left">
-              Volunteer
+      <div class="navbar">
+        <div align = "left">
+          <a href="#search">
+            <img src="search.png" height="30" width="30">
+          </a>
+        </div>
+        <div class="navbar-right">
+          <a href="#search">
+            <img src="search.png" height="30" width="30">
+          </a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img src="dropdownmenu.png" height="30" width="30">
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Explore</a>
+              <a href="#">Friends</a>
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
             </div>
-            <div class="navbar-right">
-              <a href="#news">Search</a>
-              <div class="dropdown">
-                <button class="dropbtn">Dropdown 
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div> 
-            </div>
-          </div>
+          </div> 
+        </div>
+      </div>
     </header>
     
     <br><br><br><br><br>
     <div class = "padding row">
       <div id="map"></div>
       <div class = "side-bar">
-        <!-- <div class = "searchbar">
-          <input type="text" class = "searchbar" placeholder="Search...">
-        </div> -->
+
         <div class= "content">
-         
-          <template id="currentStation">
-            <h2 id="stationName"></h2>
-            <br>
-            Lines: <span id="stationLines"></span>
-          </template>
-          <div id="CurrentStationContainer"></div>
+          <div class = "posts"  style="
+          margin: 2rem 2rem 2rem 2rem;">
+            <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEWAgIB7e3vCwsLIyMjPz8/V1dV4eHjc3Nzj4+PMzMzt7e1zc3O/v7/////39/fx8fHg4ODJbms7AAABaElEQVR4nO3dSWrDABBFQcm2PMkZ7n/aaJFNiCEmZOBJVSf4b9/Qw9Pzy/V8Pp8W0+Lw7rL/YPd9+y9dDo+YHnH65DpM8/Ge8S/dXfAz5tswHYc1G3cK65bCg8I2hX0K+xT2KexT2LcUXsb/HvGrlsK9wjaFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9h3yYKdwrbFPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2LeJiyGFcQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2baJw/T9K1v9nRmGcwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8K+pXBS2KawT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insG8ThSeFbQr7FPYp7FPYp7BPYZ/Cvm0UzuOazbfhetut2e31DZx9EnazzT4gAAAAAElFTkSuQmCC"
+              width="100%" height="150px"><br><br>
+              <div id = "text">Feeding Puppies! <br></div>
+              <div id = "subtext">
+                <img src = "location.png"
+                  height="20px" width="20px">
+                1200 Vestal Pkwy E, Binghamton, NY 13902 <br>
+                <img src = "clock.png"
+                  height="20px" width="20px">
+                9:00am - 11:00am <br>
+              </div>
+              <div id = "smalltext">
+                fjoiejo irejfrio3r43t45t54jgoewfe tier<br>
+                fjoiejoirerew twersfgsdgffsdgsgj friojgoier<br>
+                fjewojfoer wefvwergvrjfoerjgfoer<br><br>
+              </div>
+              <div align = "center">
+                <a href="#" class="button">Sign Up</a>
+              </div>
+          </div>
 
-          <template id="transitLine">
-            <h4 id = "backButton" style="color: #5384ED;">← Back</h4>
-            <br>
-            <h2 id="lineName"></h2>
-            <br>
-            Route: <span id="routeDescription"></span>
-            <br>
-            <h4 id = "showTransport" style="color: #5384ED;">Show Locations</h4>
-          </template>
-          <div id="transitLineContainer"></div>
+          <div class= "content">
 
-          <template id="transitTimes">
-            <h2 id="lineName"></h2>
-            <br>
-            Route: <span id="routeDescription"></span>
-            <br>
-            Current Station: <span id="stationName"></span>
-            <br><br>
-            PLACE HOLDER FOR WHEN TIME IS ADDED
-          </template>
-          <div id="transitTimesContainer"></div>
+            <div class = "posts"  style="
+            margin: 2rem 2rem 2rem 2rem;">
+              <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEWAgIB7e3vCwsLIyMjPz8/V1dV4eHjc3Nzj4+PMzMzt7e1zc3O/v7/////39/fx8fHg4ODJbms7AAABaElEQVR4nO3dSWrDABBFQcm2PMkZ7n/aaJFNiCEmZOBJVSf4b9/Qw9Pzy/V8Pp8W0+Lw7rL/YPd9+y9dDo+YHnH65DpM8/Ge8S/dXfAz5tswHYc1G3cK65bCg8I2hX0K+xT2KexT2LcUXsb/HvGrlsK9wjaFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9h3yYKdwrbFPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2LeJiyGFcQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2baJw/T9K1v9nRmGcwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8K+pXBS2KawT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insG8ThSeFbQr7FPYp7FPYp7BPYZ/Cvm0UzuOazbfhetut2e31DZx9EnazzT4gAAAAAElFTkSuQmCC"
+                width="100%" height="150px"><br><br>
+                <div id = "text">Feeding Puppies! <br></div>
+                <div id = "subtext">
+                  <img src = "location.png"
+                    height="20px" width="20px">
+                  1200 Vestal Pkwy E, Binghamton, NY 13902 <br>
+                  <img src = "clock.png"
+                    height="20px" width="20px">
+                  9:00am - 11:00am <br>
+                </div>
+                <div id = "smalltext">
+                  fjoiejo irejfrio3r43t45t54jgoewfe tier<br>
+                  fjoiejoirerew twersfgsdgffsdgsgj friojgoier<br>
+                  fjewojfoer wefvwergvrjfoerjgfoer<br><br>
+                </div>
+                <div align = "center">
+                  <a href="#" class="button">Sign Up</a>
+                </div>
+            </div>
+
+            <div class = "posts"  style="
+            margin: 2rem 2rem 2rem 2rem;">
+              <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEWAgIB7e3vCwsLIyMjPz8/V1dV4eHjc3Nzj4+PMzMzt7e1zc3O/v7/////39/fx8fHg4ODJbms7AAABaElEQVR4nO3dSWrDABBFQcm2PMkZ7n/aaJFNiCEmZOBJVSf4b9/Qw9Pzy/V8Pp8W0+Lw7rL/YPd9+y9dDo+YHnH65DpM8/Ge8S/dXfAz5tswHYc1G3cK65bCg8I2hX0K+xT2KexT2LcUXsb/HvGrlsK9wjaFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9h3yYKdwrbFPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2LeJiyGFcQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2baJw/T9K1v9nRmGcwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8K+pXBS2KawT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insG8ThSeFbQr7FPYp7FPYp7BPYZ/Cvm0UzuOazbfhetut2e31DZx9EnazzT4gAAAAAElFTkSuQmCC"
+                width="100%" height="150px"><br><br>
+                <div id = "text">Feeding Puppies! <br></div>
+                <div id = "subtext">
+                  <img src = "location.png"
+                    height="20px" width="20px">
+                  1200 Vestal Pkwy E, Binghamton, NY 13902 <br>
+                  <img src = "clock.png"
+                    height="20px" width="20px">
+                  9:00am - 11:00am <br>
+                </div>
+                <div id = "smalltext">
+                  fjoiejo irejfrio3r43t45t54jgoewfe tier<br>
+                  fjoiejoirerew twersfgsdgffsdgsgj friojgoier<br>
+                  fjewojfoer wefvwergvrjfoerjgfoer<br><br>
+                </div>
+                <div align = "center">
+                  <a href="#" class="button">Sign Up</a>
+                </div>
+            </div>
+
+            <div class = "posts"  style="
+            margin: 2rem 2rem 2rem 2rem;">
+              <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEWAgIB7e3vCwsLIyMjPz8/V1dV4eHjc3Nzj4+PMzMzt7e1zc3O/v7/////39/fx8fHg4ODJbms7AAABaElEQVR4nO3dSWrDABBFQcm2PMkZ7n/aaJFNiCEmZOBJVSf4b9/Qw9Pzy/V8Pp8W0+Lw7rL/YPd9+y9dDo+YHnH65DpM8/Ge8S/dXfAz5tswHYc1G3cK65bCg8I2hX0K+xT2KexT2LcUXsb/HvGrlsK9wjaFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9h3yYKdwrbFPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2LeJiyGFcQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2baJw/T9K1v9nRmGcwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8K+pXBS2KawT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insG8ThSeFbQr7FPYp7FPYp7BPYZ/Cvm0UzuOazbfhetut2e31DZx9EnazzT4gAAAAAElFTkSuQmCC"
+                width="100%" height="150px"><br><br>
+                <div id = "text">Feeding Puppies! <br></div>
+                <div id = "subtext">
+                  <img src = "location.png"
+                    height="20px" width="20px">
+                  1200 Vestal Pkwy E, Binghamton, NY 13902 <br>
+                  <img src = "clock.png"
+                    height="20px" width="20px">
+                  9:00am - 11:00am <br>
+                </div>
+                <div id = "smalltext">
+                  fjoiejo irejfrio3r43t45t54jgoewfe tier<br>
+                  fjoiejoirerew twersfgsdgffsdgsgj friojgoier<br>
+                  fjewojfoer wefvwergvrjfoerjgfoer<br><br>
+                </div>
+                <div align = "center">
+                  <a href="#" class="button">Sign Up</a>
+                </div>
+            </div><br>
+      
         </div>
 
       </div>
