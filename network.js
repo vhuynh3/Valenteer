@@ -1,14 +1,3 @@
-const clicked = [0, 0, 0, 0, 0, 0, 0];
-function selectConnection(id) {
-  if (clicked[parseInt(id)] == 0) {
-    document.getElementById(id).style.backgroundColor = "#3E7957";
-    clicked[parseInt(id)] = 1;
-  } else {
-    document.getElementById(id).removeAttribute('style');
-    clicked[parseInt(id)] = 0;
-  }
-}
-
 var userColor = "#6BB389",
   interestColor = "#FFA185",
   friendColor = "#643C16";
