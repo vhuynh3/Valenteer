@@ -58,6 +58,7 @@ html {
   padding-bottom: 1rem;
   text-align: center;
   cursor: pointer;
+  background-color: white;
 }
 
 .button {
@@ -86,7 +87,6 @@ html {
   color: #331E0A;
   font-size: 0.75rem;
 }
-
 
 #map {
   position: fixed;
