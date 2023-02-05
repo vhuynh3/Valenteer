@@ -31,9 +31,10 @@ html {
 }
 
 .column2 {
+
   float: left;
-  width: 75%;
-  margin-left: 200px;
+  width: 50%;
+  margin-left: 250px;
   padding: 5px;
 }
 
@@ -101,6 +102,7 @@ html {
   font-size: rem;
 }
 
+
 /* body{
     height: 100vh;
     width: 100%;
@@ -142,6 +144,7 @@ html {
     color: #FEFEE3;
     
 }
+
 
 .buttons .button-friends:hover, .buttons .button-friends:focus, .buttons .button-friends:active{
     background: #df937c;
