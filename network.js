@@ -46,12 +46,12 @@ Highcharts.chart('container', {
     data: [
       ['Me', 'Air Pollution'],
       ['Me', 'Homelessness'],
-      ['Me', 'Education'],
       ['Me', 'Animal Care'],
+      ['Me', 'Education'],
       ['Viera', 'Plastic Pollution'],
-      ['Viera', 'Education'],
+      ['Viera', 'Animal Care'],
       ['Viera', 'Hunger'],
-      ['Ethan', 'Education'],
+      ['Ethan', 'Animal Care'],
       ['Ethan', 'Homelessness'],
 
       // ['', '']
