@@ -1,0 +1,36 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+
+  .left-info{
+    background-color: white;
+    box-shadow: 5px #7A7A7A;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    width:40%;
+    border-radius: 20px;
+  }
+
+  .right-info{
+    background-color: white;
+    box-shadow: 5px #7A7A7A;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    width:60%;
+    border-radius: 20px;
+  }
+
+  #profile{
+    border-radius:50%;
+    width:40%;
+  }
