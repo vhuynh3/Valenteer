@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: #FEFEE3;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    /* display: flex; */
+
+}
+
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.buttons .button-friends{
+    width: 175px;
+    height: 55px;
+    border-radius: 25px;
+    background: #FFA185;
+    cursor: pointer;
+
+    line-height: 50px;
+    font-size: 27px;
+    text-align: center;
+    color: #FEFEE3;
+    
+}
+
+.buttons .button-friends:hover, .buttons .button-friends:focus, .buttons .button-friends:active{
+    background: #df937c;
+}
+
+.buttons .button-keywords{
+    width: 200px;
+    height: 55px;
+    border-radius: 25px;
+    background: #FFA185;
+    cursor: pointer;
+
+    line-height: 50px;
+    font-size: 27px;
+    text-align: center;
+    color: #FEFEE3;
+}
+
+
+.buttons .button-keywords:hover, .buttons .button-keywords:focus, .buttons .button-keywords:active{
+    background: #df937c;
+}
+
+
+
+.box{
+    max-width: 5000px;
+    width: 100%;
+}
+ 
+.box .search-box{
+    position: relative;
+    height: 100px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    
+}
+
+
+.search-box .icon{
+    position: absolute;
+    top: 0%;
+    left: -7%;
+    width : 100px;
+    height : 100%;
+    border-radius: 50px;
+    background:  #3E7957;
+    cursor: pointer;
+    
+    line-height: 100px;
+    font-size: 50px;
+    text-align: center;
+    color:  #FEFEE3
+}
+
+.search-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 30px;   
+}
+
+
+/* .search-box .icon {
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width : 100px;
+    height : 100%;
+    border-radius: 50px;
+    background:  #3E7957;
+    cursor: pointer;
+    
+    line-height: 100px;
+    font-size: 30px;
+    text-align: center;
+    color: #FEFEE3;
+} */
+
+
+.box .text-click{
+    position: relative;
+    text-align: center;
+    font-style: italic;
+    font-size: 10px;
+    color: rgb(158, 158, 158);
+}
+
+.box .text-click:hover, .box .text-click:focus, .box .text-click:active{
+    background: #df937c;
+}
