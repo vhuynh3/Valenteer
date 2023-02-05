@@ -4,16 +4,111 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
-body{
+html {
+  background-color: #fefee3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+}
+
+.padding {
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.column1 {
+  float: left;
+  width: 5%;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.column2 {
+  float: left;
+  width: 75%;
+  margin-left: 200px;
+  padding: 5px;
+}
+
+.content .inside-texts .person1 .column2 .name{
+  font-size: 300;
+  font-weight: 600;
+}
+
+.column3 {
+  float: left;
+  width: 0%;
+  padding: 10px;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.content{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-height: 100%;
+    width: 47%;
+}
+
+.small {
+    width: 20%;
+}
+
+.inside-texts {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 2rem 2rem 1rem 2rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    cursor: pointer;
+    width: 200%;
+    height: 87%;
+    background-color: #FFA185;
+    border-radius: 50px;
+}
+
+#name {
+  text-align: left;
+  color: #643c16;
+  font-size: 3rem;
+  padding-top: 2%;
+}
+#text-intr {
+  text-align: center;
+  color: #331E0A;
+  font-size: rem;
+}
+
+/* body{
     height: 100vh;
     width: 100%;
     background: #FEFEE3;
     align-items: center;
     justify-content: center;
     transition: all .3s ease-in-out;
-    /* display: flex; */
+    display: flex;
 
 }
 
@@ -135,7 +230,6 @@ body{
     color: #FEFEE3;
   }
 
-  /**************************/
   
 .box .search-box{
     position: relative;
@@ -177,7 +271,7 @@ body{
 }
 
 
-/* .search-box .icon {
+.search-box .icon {
     position: absolute;
     right: -2px;
     top: 0;
@@ -191,7 +285,7 @@ body{
     font-size: 30px;
     text-align: center;
     color: #FEFEE3;
-} */
+}
 
 
 .box .text-click{
@@ -204,4 +298,4 @@ body{
 
 .box .text-click:hover, .box .text-click:focus, .box .text-click:active{
     background: #df937c;
-}
+} */
