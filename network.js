@@ -1,16 +1,21 @@
-var userColor = "#4da6ff",
-  interestColor = "#00cc00",
-  friendColor = "#ff9933";
+var userColor = "#6BB389",
+  interestColor = "#FFA185",
+  friendColor = "#643C16";
 
 Highcharts.chart('container', {
 
   chart: {
     type: 'networkgraph',
-    plotBorderWidth: 2
+    plotBorderWidth: 2,
   },
 
   title: {
-    text: 'What I Like'
+    text: 'What I Like',
+    style: {
+      fontFamily: 'TeX Gyre Adventor',
+      fontSize: 50,
+      color: '#643C16'
+    }
   },
 
   // subtitle: {
@@ -29,6 +34,7 @@ Highcharts.chart('container', {
   },
 
   series: [{
+    
     marker: {
       radius: 14,
     },
@@ -73,11 +79,18 @@ Highcharts.chart('container', {
       color: interestColor
     }, {
       id: 'Education',
-      color: interestColor
+      color: interestColor,
+      cursor: 'pointer',
+      events: {
+        click: function (event) {
+          location.href = "https://narnia.com"
+        }
+      }
+
     }, {
       id: 'Animal Care',
       color: interestColor
-      
+
     }, {
       id: 'Plastic Pollution',
       color: interestColor

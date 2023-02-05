@@ -1,7 +1,13 @@
+html {
+  background-color: #FEFEE3;
+}
+
 #connections {
-  border-style: solid;
-  border-color: black;
-  border-width: 1px;
+  background-color: #FFA185;
+  border-style:solid;
+  border-radius: 10px;
+  border-color: #6BB389;
+  border-width: 4px;
 
   height: 515px;
   width: 250px;
@@ -13,8 +19,9 @@
 }
 
 #connectLabel {
-  margin:auto;
-  color:black;
+  margin-top: 20px;
+  margin: center;
+  color:#643C16;
   font-size: 35px;
 }
 
@@ -27,11 +34,13 @@ li{
   width: 180px;
 
   border-style:solid;
-  border-color: black;
-  border-width: 1px;
+  border-radius: 10px;
+  border-color: #FFC9B9;
+  border-width: 3px;
 
   margin: 15px 0;
   font-size: 20px;
+  color: #643C16;
 }
 
 #container {
@@ -39,4 +48,8 @@ li{
   margin-left: 420px;
   height: 580px;
   width: 1000px
+}
+
+.highcharts-background {
+  fill: #FEFEE3;
 }
