@@ -8,7 +8,7 @@ li {
 }
   
 .navbar {
-  background-color: #fff0f3;
+  background-color: #6BB389;
   padding-top: 15px;
   padding-bottom: 15px;
   position: fixed;
@@ -31,6 +31,7 @@ li {
   }
   .navbar-right {
     float: right;
+    padding-right: 3%;
   }
 
   .dropdown {
@@ -50,21 +51,21 @@ li {
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #3e7957;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
     float: none;
-    color: black;
+    color: #643c16;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
