@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Network</title>
+    <link rel="stylesheet" href="network.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div align = "left">
+        Volunteer
+      </div>
+      <div class="navbar-right">
+        <a href="#news">Search</a>
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <div id = "connections">
+      <label> Connections </label>
+      <ul>
+        <li><input type="checkbox"> Friend1</li>
+        <li><input type="checkbox"> Friend2</li>
+        <li><input type="checkbox"> Activity1</li>
+        <li><input type="checkbox"> Activity2</li>
+      </ul>
+    </div>
+    
+    <div id="container"></div>
+    
+    <script src="network.js"></script>
+    
+  </body>
+
+</html>
