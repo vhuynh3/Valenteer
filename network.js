@@ -26,9 +26,9 @@ Highcharts.chart('container', {
     networkgraph: {
       keys: ['from', 'to'],
       layoutAlgorithm: {
-        enableSimulation: true,
+        enableSimulation: false,
         integration: 'verlet',
-        linkLength: 100
+        linkLength: 150
       }
     }
   },
@@ -36,7 +36,7 @@ Highcharts.chart('container', {
   series: [{
     
     marker: {
-      radius: 14,
+      radius: 20,
     },
     dataLabels: {
       enabled: true,
@@ -60,19 +60,19 @@ Highcharts.chart('container', {
       id: 'Me',
       color: userColor,
       marker: {
-        radius: 25
+        radius: 35
       }
     }, {
       id: 'Viera',
       color: friendColor,
       marker: {
-        radius: 17
+        radius: 25
       }
     }, {
       id: 'Ethan',
       color: friendColor,
       marker: {
-        radius: 17
+        radius: 25
       }
     }, {
       id: 'Air Pollution',
