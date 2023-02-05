@@ -4,8 +4,8 @@ var showTransportMarker = false;
 
 async function initMap() {
   userPos = {
-    lat: 40.7614,
-    lng: -73.9776,
+    lat: 42.0894,
+    lng: -75.9695,
   };
   
   map = new google.maps.Map(document.getElementById("map"), {
