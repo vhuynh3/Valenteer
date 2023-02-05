@@ -19,11 +19,16 @@ html {
   overflow: auto;
 }
 
+.padding {
+  margin: 10rem 0rem 0rem 0rem;
+}
+
 .search{
   text-align: left;
   max-width: 5000px;
   width: 100%;
   padding-left: 50px;
+  padding-top: 30px;
 }
 
 .search .search-bar input {

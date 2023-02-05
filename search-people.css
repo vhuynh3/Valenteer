@@ -17,6 +17,15 @@ body{
 
 }
 
+.padding {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.container {
+  margin-top: 20%;
+  margin-left: 17%;
+  padding: 32px;
+}
 
 .buttons{
     display: flex;
@@ -67,7 +76,67 @@ body{
     max-width: 5000px;
     width: 100%;
 }
- 
+
+
+  .button-user {
+    margin-bottom: 10px;
+    height: 50px;
+    width: 150px;
+    padding: 0;
+
+    background: #FFA185;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .button-user:hover{
+    background: #e4957d;
+    color: #FEFEE3;
+  }
+  .button-user:active{
+    background: #ca836d;
+    color: #FEFEE3;
+  }
+
+  .button-keywords {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 175px;
+    padding: 0;
+
+    background: #FFA185;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .button-keywords:hover{
+    background: #e4957d;
+    color: #FEFEE3;
+  }
+  .button-keywords:active{
+    background: #ca836d;
+    color: #FEFEE3;
+  }
+
+  /**************************/
+  
 .box .search-box{
     position: relative;
     height: 100px;

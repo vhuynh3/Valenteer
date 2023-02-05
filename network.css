@@ -37,11 +37,11 @@ html {
   background-color: white;
   box-shadow: 0 5px 10px #ccc;
   border-radius: 10px;
-  height: 55px;
+  height: 538px;
   width: 250px;
   position: fixed;
-  top: 250px;
-  left: 200px;
+  top: 325px;
+  left: 250px;
 
 }
 
@@ -76,8 +76,8 @@ li{
 }
 
 #container {
-  margin-top: 200px;
-  margin-left: 500px;
+  margin-top: 275px;
+  margin-left: 550px;
   height: 600px;
   width: 1200px
 }
