@@ -10,9 +10,10 @@ Highcharts.chart('container', {
   },
 
   title: {
-    text: 'What I Like',
+    text: 'My Interests in Common',
     style: {
-      fontFamily: 'TeX Gyre Adventor',
+      textDecoration: 'underline',
+      fontFamily: 'Poppins',
       fontSize: 50,
       color: '#643C16'
     }
