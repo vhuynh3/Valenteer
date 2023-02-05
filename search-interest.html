@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Search Bar</title>
+    <link rel = "stylesheet" href = "search-interest.css">
+    <link rel = "stylesheet" href = "navbar.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+
+<body>
+    <div class="navbar">
+        <div align = "left">
+          <a href="#search">
+            <img src="search.png" height="30" width="30">
+          </a>
+        </div>
+        <div class="navbar-right">
+          <a href="#search">
+            <img src="search.png" height="30" width="30">
+          </a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img src="dropdownmenu.png" height="30" width="30">
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Sign In</a>
+              <a href="#">About Us</a>
+            </div>
+          </div> 
+        </div>
+    </div>
+
+    <div class="container">
+        <button type = "button" class = "button-user">
+            <span class = "button-u-icon">
+                <i class="fa-solid fa-user"></i> 
+            </span>
+            <span class = "button-u-text">
+                Users
+            </span>
+        </button>
+
+        <button type = "button" class = "button-keywords">
+            <span class = "button-k-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span class = "button-k-text">
+                Keywords
+            </span>
+        </button>
+
+
+
+        <div class="select-box">
+            <div class="options-container">
+           
+            <div class="option">
+                <input
+                type="interest"
+                class="interest"
+                id="environment"
+                name="category"
+                />
+                <label for="environment">Environment</label>
+            </div>
+
+            <div class="option">
+                <input type="interest" class="interest" id="animals" name="category" />
+                <label for="animals">Animals</label>
+            </div>
+
+            <div class="option">
+                <input type="interest" class="interest" id="poverty" name="category" />
+                <label for="poverty">Poverty</label>
+            </div>
+
+            <div class="option">
+                <input type="interest" class="interest" id="education" name="category" />
+                <label for="education">Education</label>
+            </div>
+
+            <div class="option">
+                <input type="interest" class="interest" id="technology" name="category" />
+                <label for="technology">Technology</label>
+            </div>
+
+            <div class="option">
+                <input type="interest" class="interest" id="music" name="category" />
+                <label for="music">Music</label>
+            </div>
+
+            <div class="option">
+                <input type="interest" class="interest" id="market" name="category" />
+                <label for="market">Marketing</label>
+            </div>
+
+            <div class="option">
+                <input type="interest" class="interest" id="sports" name="category" />
+                <label for="sports">Sports</label>
+            </div>
+
+            <div class="option">
+                <input type="interest" class="interest" id="math" name="category" />
+                <label for="math">Accounting</label>
+            </div>
+
+            </div>
+
+            <div class="selected">
+                <span class = "selected-icon-look">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span class = "selected-text">
+                    Select Interests 
+                </span>
+                <span class = "selected-icon-down">
+                    <i class="fa-solid fa-caret-down"></i>
+                </span>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="search-interest.js"></script>
+</body>
+</html>

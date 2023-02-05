@@ -58,6 +58,7 @@ html {
   cursor: pointer;
   background-color: white;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #connectLabel {
