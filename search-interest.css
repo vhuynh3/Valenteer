@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FEFEE3;
+
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+  }
+
+  
+  
+  .container {
+    margin-top: 200px;
+    margin-left: 17%;
+    padding: 32px;
+  }
+
+  .button-user {
+    margin-left: 45px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 150px;
+    padding: 0;
+
+    background: #FFA185;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .button-user:hover{
+    background: #e4957d;
+    color: #FEFEE3;
+  }
+  .button-user:active{
+    background: #ca836d;
+    color: #FEFEE3;
+  }
+
+  .button-keywords {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 175px;
+    padding: 0;
+
+    background: #FFA185;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .button-keywords:hover{
+    background: #e4957d;
+    color: #FEFEE3;
+  }
+  .button-keywords:active{
+    background: #ca836d;
+    color: #FEFEE3;
+  }
+  
+  .select-box {
+    display: flex;
+    width: 1150px;
+    height: 500px;
+    font-size: 25px;
+    
+    
+    flex-direction: column;
+  }
+  
+  .select-box .options-container {
+    background: #3E7957;
+    color: #FEFEE3;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+  
+    order: 1;
+  }
+  
+  .selected {
+    background: #3E7957;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: #FEFEE3;
+    position: relative;
+  
+    order: 0;
+  }
+
+
+  .selected  .selected-text{
+    margin-left: 10px;
+  }
+  .selected .selected-icon-down{
+    margin-left: 835px;
+    font-size: 30px;
+  }
+
+  
+  .selected::after {
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+  
+    transition: all 0.4s;
+  }
+  
+  .select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -6px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: #7fbb98;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: #0e331e;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .option,
+  .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  .select-box .option:hover {
+    background: #6BB389;
+  }
+  
+  .select-box label {
+    cursor: pointer;
+  }
+  
+  .select-box .option .interest {
+    display: none;
+  }

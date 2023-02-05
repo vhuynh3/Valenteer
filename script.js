@@ -7,6 +7,18 @@ async function initMap() {
     lat: 42.0894,
     lng: -75.9695,
   };
+  ShelterA = {
+    lat: 42.12433708885335, 
+    lng: -75.9661944634708
+  }
+  ShelterB = {
+    lat: 42.094663531576835,
+    lng: -75.90027192177463
+  }
+  ShelterC = {
+    lat: 42.103293212629666, 
+    lng: -76.04882980839983
+  }
   
   map = new google.maps.Map(document.getElementById("map"), {
     center: userPos,
@@ -27,6 +39,18 @@ async function initMap() {
       fillColor: '#5384ED',
       strokeColor: '#ffffff',
     },
+  });
+  const markerA = new google.maps.Marker({
+    position: ShelterA,
+    map: map,
+  });
+  const markerB = new google.maps.Marker({
+    position: ShelterB,
+    map: map,
+  });
+  const markerC = new google.maps.Marker({
+    position: ShelterC,
+    map: map,
   });
 
   if (navigator.geolocation) {

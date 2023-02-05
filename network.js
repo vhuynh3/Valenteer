@@ -46,12 +46,12 @@ Highcharts.chart('container', {
     data: [
       ['Me', 'Air Pollution'],
       ['Me', 'Homelessness'],
-      ['Me', 'Education'],
       ['Me', 'Animal Care'],
+      ['Me', 'Education'],
       ['Viera', 'Plastic Pollution'],
-      ['Viera', 'Education'],
+      ['Viera', 'Animal Care'],
       ['Viera', 'Hunger'],
-      ['Ethan', 'Education'],
+      ['Ethan', 'Animal Care'],
       ['Ethan', 'Homelessness'],
 
       // ['', '']
@@ -80,17 +80,15 @@ Highcharts.chart('container', {
     }, {
       id: 'Education',
       color: interestColor,
+    }, {
+      id: 'Animal Care',
+      color: interestColor,
       cursor: 'pointer',
       events: {
         click: function (event) {
-          location.href = "https://narnia.com"
+          location.href = "maps.html"
         }
       }
-
-    }, {
-      id: 'Animal Care',
-      color: interestColor
-
     }, {
       id: 'Plastic Pollution',
       color: interestColor
