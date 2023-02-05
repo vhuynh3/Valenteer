@@ -9,9 +9,9 @@ li {
   
 .navbar {
   z-index: 5;
-  background-color: #6BB389;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  background-color: #6bb389c0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -26,9 +26,18 @@ li {
     padding: 14px 16px;
     text-decoration: none;
   }
+
+.navbar b {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
   
   .navbar-left {
     float: left;
+    padding-left: 3%;
   }
   .navbar-right {
     float: right;
