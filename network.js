@@ -4,7 +4,7 @@ function selectConnection(id) {
     document.getElementById(id).style.backgroundColor = "#3E7957";
     clicked[parseInt(id)] = 1;
   } else {
-    document.getElementById(id).style.backgroundColor = "white";
+    document.getElementById(id).removeAttribute('style');
     clicked[parseInt(id)] = 0;
   }
 }
