@@ -9,9 +9,9 @@ border-bottom: 1px solid #ffffff;
 
 .navbar {
 z-index: 5;
-background-color: #83c49e;
-padding-top: 10px;
-padding-bottom: 10px;
+background-color: #83c49ee7;
+padding-top: 8px;
+padding-bottom: 8px;
 position: fixed;
 top: 0;
 width: 100%;
@@ -23,14 +23,14 @@ border-bottom: white 1.5px solid;
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 10px 10px;
+  padding: 5px 5px;
   text-decoration: none;
 }
 
 
 .navbar-left {
   float: left;
-  padding-left: 3%;
+  padding-left: 5%;
 
   font-size: 16px;
   color: white;
@@ -39,8 +39,8 @@ border-bottom: white 1.5px solid;
 }
 .navbar-right {
   float: right;
-  padding-top: 15px;
-  padding-right: 3%;
+  padding-top: 5px;
+  padding-right: 5%;
 }
 
 .dropdown {
@@ -53,7 +53,7 @@ border-bottom: white 1.5px solid;
   border: none;
   outline: none;
   color: white;
-  padding: 10px 10px;
+  padding: 5px 5px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -90,6 +90,15 @@ border-bottom: white 1.5px solid;
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.headIMG {
+  position: fixed;
+  width: 100%;
+  height: 32%;
+  left: 0px;
+  top: -50px;
+}
+
 
 /* width */
 ::-webkit-scrollbar {

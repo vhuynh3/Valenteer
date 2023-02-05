@@ -8,26 +8,31 @@
 }
 
 html {
-  background-color: #fefee3;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: auto;
+    /* background-color: #fefee3; */
+    background-image: url('front-bg.png');
+    background-size: cover;
+    background-position: bottom center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: auto;
 }
 
+
+
 .padding {
-  margin: 6.5rem 1rem 0rem 0rem;
+  margin: 7.5rem 0rem 0rem 0rem;
 }
 
 .button {
     background-color: #FFA185; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 14px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -38,18 +43,18 @@ html {
 .content {
     justify-content: center;
     align-items: center;
-    margin-top: 10%;
+    padding-top: -500px;
 }
 
 #title {
     text-align: center;
     color: #643c16;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 #subtitle {
     text-align: center;
     color: #331E0A;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 #text {
