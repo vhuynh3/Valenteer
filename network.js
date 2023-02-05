@@ -10,9 +10,10 @@ Highcharts.chart('container', {
   },
 
   title: {
-    text: 'What I Like',
+    text: 'My Interests in Common',
     style: {
-      fontFamily: 'TeX Gyre Adventor',
+      textDecoration: 'underline',
+      fontFamily: 'Poppins',
       fontSize: 50,
       color: '#643C16'
     }
@@ -46,12 +47,12 @@ Highcharts.chart('container', {
     data: [
       ['Me', 'Air Pollution'],
       ['Me', 'Homelessness'],
-      ['Me', 'Education'],
       ['Me', 'Animal Care'],
+      ['Me', 'Education'],
       ['Viera', 'Plastic Pollution'],
-      ['Viera', 'Education'],
+      ['Viera', 'Animal Care'],
       ['Viera', 'Hunger'],
-      ['Ethan', 'Education'],
+      ['Ethan', 'Animal Care'],
       ['Ethan', 'Homelessness'],
 
       // ['', '']

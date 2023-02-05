@@ -20,7 +20,51 @@ html {
 }
 
 .padding {
-  margin: 6.5rem 1rem 0rem 0rem;
+  margin: 10rem 0rem 0rem 0rem;
+}
+
+.search{
+  text-align: left;
+  max-width: 5000px;
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.search .search-bar input {
+  background: #ffa2858a;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 25px;
+  font-style: italic;
+  flex: 1;
+  border: 0;
+  color: #7d7d86;
+  border-radius: 25px;
+  padding-left: 25px;
+
+  width: 1000px;
+  height: 50px;
+}
+
+.search .search-bar button{
+  border: 0;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+
+  background: transparent;
+  outline: none;
+  padding-left: 20px;
+  font-size: 35px;
+  flex: 1;
+  color: #b960458a;
+}
+
+
+.padding {
+  margin: 0.25rem 1rem 0rem 0rem;
 }
 
 .row {
@@ -48,6 +92,7 @@ html {
   margin-top: 1rem;
   margin-bottom: 1rem;
   max-height: 100%;
+  padding: 5px;
 
 }
 

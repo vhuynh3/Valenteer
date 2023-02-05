@@ -4,6 +4,7 @@
     <title>MAPS</title>
     <link rel="stylesheet" href="maps.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <script src="script.js"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=APIKEYHERE"></script> -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXxJR-rtfO8x3cvURrJhaSGvwGjlbLcCc"></script>
@@ -13,18 +14,18 @@
   <body onload="initMap();">
     <header class="header">
       <div class="navbar">
-        <div align = "left">
+        <div class = "navbar-left">
           <a href="foryou.html">
-            <img src="search.png" height="30" width="30">
+            <img src="valenteer-logo.png" height="50" width="140">
           </a>
         </div>
         <div class="navbar-right">
           <a href="search-interest.html">
-            <img src="search.png" height="30" width="30">
+            <img src="search.png" height="40" width="40">
           </a>
           <div class="dropdown">
             <button class="dropbtn">
-              <img src="dropdownmenu.png" height="30" width="30">
+              <img src="dropdownmenu.png" height="40" width="40">
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -36,9 +37,24 @@
           </div> 
         </div>
       </div>
+      <img src="leaves.png" class= "headIMG">
     </header>
     
     <br><br><br><br><br>
+    <div class = "padding"></div>
+    
+
+
+    <div class = "search">
+        <form action="" class="search-bar">
+          <button type = "icon">
+            <i class = "fas fa-search"></i>
+          </button>
+          <input type = "text" placeholder = "search interests" name = "search-text">
+        </form>
+    </div>
+
+
     <div class = "padding row">
       <div id="map"></div>
       <div class = "side-bar">
@@ -46,46 +62,70 @@
         <div class= "content">
           <div class = "posts"  style="
           margin: 2rem 2rem 2rem 2rem;">
-            <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEWAgIB7e3vCwsLIyMjPz8/V1dV4eHjc3Nzj4+PMzMzt7e1zc3O/v7/////39/fx8fHg4ODJbms7AAABaElEQVR4nO3dSWrDABBFQcm2PMkZ7n/aaJFNiCEmZOBJVSf4b9/Qw9Pzy/V8Pp8W0+Lw7rL/YPd9+y9dDo+YHnH65DpM8/Ge8S/dXfAz5tswHYc1G3cK65bCg8I2hX0K+xT2KexT2LcUXsb/HvGrlsK9wjaFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9h3yYKdwrbFPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2LeJiyGFcQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2baJw/T9K1v9nRmGcwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8K+pXBS2KawT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insG8ThSeFbQr7FPYp7FPYp7BPYZ/Cvm0UzuOazbfhetut2e31DZx9EnazzT4gAAAAAElFTkSuQmCC"
+            <img src = "humane-society.jpg"
               width="100%" height="150px" style="border-radius: 5px;"><br><br>
-              <div id = "text">Feeding Puppies! <br></div>
+              <div id = "text"> The Humane Society! <br></div>
               <div id = "subtext">
                 <img src = "location.png"
                   height="20px" width="20px">
-                1200 Vestal Pkwy E, Binghamton, NY 13902 <br>
+                  167 Conklin Ave, Binghamton, NY 13903 <br>
                 <img src = "clock.png"
                   height="20px" width="20px">
-                9:00am - 11:00am <br>
+                12:00pm - 05:00pm <br>
               </div>
               <div id = "smalltext">
-                fjoiejo irejfrio3r43t45t54jgoewfe tier<br>
-                fjoiejoirerew twersfgsdgffsdgsgj friojgoier<br>
-                fjewojfoer wefvwergvrjfoerjgfoer<br><br>
+                To support the work of the Humane Society of Broome County, 
+                you can make a donation, volunteer your time, 
+                or consider adopting a pet from their shelter.<br><br>
               </div>
               <div align = "center">
                 <a href="#" class="button">Sign Up</a>
               </div>
           </div>
 
+          <div class = "posts"  style="
+          margin: 2rem 2rem 2rem 2rem;">
+            <img src = "animal-care-council.png"
+            width="100%" height="150px" style="border-radius: 5px;"><br><br>
+              <div id = "text">Animal Care Council <br></div>
+              <div id = "subtext">
+                <img src = "animal-care-council.png"
+                  height="20px" width="20px">
+                  131 Washington Ave, Endicott, NY 13760 <br>
+                <img src = "clock.png"
+                  height="20px" width="20px">
+                3:30pm - 06:30pm <br>
+              </div>
+              <div id = "smalltext">
+                ACC offer training and education to staff and volunteers, 
+                promote animal welfare initiatives and policies, and provide funding 
+                and grants to organizations working to improve the lives of animals.<br><br>
+              </div>
+              <div align = "center">
+                <a href="#" class="button">Sign Up</a>
+              </div>
+          </div><br>
+
           <div class= "content">
 
             <div class = "posts"  style="
             margin: 2rem 2rem 2rem 2rem;">
-               <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEWAgIB7e3vCwsLIyMjPz8/V1dV4eHjc3Nzj4+PMzMzt7e1zc3O/v7/////39/fx8fHg4ODJbms7AAABaElEQVR4nO3dSWrDABBFQcm2PMkZ7n/aaJFNiCEmZOBJVSf4b9/Qw9Pzy/V8Pp8W0+Lw7rL/YPd9+y9dDo+YHnH65DpM8/Ge8S/dXfAz5tswHYc1G3cK65bCg8I2hX0K+xT2KexT2LcUXsb/HvGrlsK9wjaFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9h3yYKdwrbFPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2LeJiyGFcQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2baJw/T9K1v9nRmGcwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8K+pXBS2KawT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insG8ThSeFbQr7FPYp7FPYp7BPYZ/Cvm0UzuOazbfhetut2e31DZx9EnazzT4gAAAAAElFTkSuQmCC"
+               <img src = "project-paw.png"
                width="100%" height="150px" style="border-radius: 5px;"><br><br>
-                <div id = "text">Feeding Puppies! <br></div>
+                <div id = "text">Project Paw! <br></div>
                 <div id = "subtext">
                   <img src = "location.png"
                     height="20px" width="20px">
-                  1200 Vestal Pkwy E, Binghamton, NY 13902 <br>
+                    127 Bevier St, Binghamton, NY 13904 <br>
                   <img src = "clock.png"
                     height="20px" width="20px">
-                  9:00am - 11:00am <br>
+                  07:30am - 08:30am <br>
                 </div>
                 <div id = "smalltext">
-                  fjoiejo irejfrio3r43t45t54jgoewfe tier<br>
-                  fjoiejoirerew twersfgsdgffsdgsgj friojgoier<br>
-                  fjewojfoer wefvwergvrjfoerjgfoer<br><br>
+                  As a volunteer, you will have the opportunity to directly impact 
+                  the lives of animals and support our mission to provide care 
+                  and find homes for homeless pets.
+                  <br><br>
                 </div>
                 <div align = "center">
                   <a href="#" class="button">Sign Up</a>
@@ -94,49 +134,26 @@
 
             <div class = "posts"  style="
             margin: 2rem 2rem 2rem 2rem;">
-               <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEWAgIB7e3vCwsLIyMjPz8/V1dV4eHjc3Nzj4+PMzMzt7e1zc3O/v7/////39/fx8fHg4ODJbms7AAABaElEQVR4nO3dSWrDABBFQcm2PMkZ7n/aaJFNiCEmZOBJVSf4b9/Qw9Pzy/V8Pp8W0+Lw7rL/YPd9+y9dDo+YHnH65DpM8/Ge8S/dXfAz5tswHYc1G3cK65bCg8I2hX0K+xT2KexT2LcUXsb/HvGrlsK9wjaFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9h3yYKdwrbFPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2LeJiyGFcQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2baJw/T9K1v9nRmGcwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8K+pXBS2KawT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insG8ThSeFbQr7FPYp7FPYp7BPYZ/Cvm0UzuOazbfhetut2e31DZx9EnazzT4gAAAAAElFTkSuQmCC"
+               <img src = "speak-animal-hospital.png"
                width="100%" height="150px" style="border-radius: 5px;"><br><br>
-                <div id = "text">Feeding Puppies! <br></div>
+                <div id = "text">Speak Animal Hospital! <br></div>
                 <div id = "subtext">
                   <img src = "location.png"
                     height="20px" width="20px">
-                  1200 Vestal Pkwy E, Binghamton, NY 13902 <br>
+                  351 Flint Rd, Binghamton, NY 13905 <br>
                   <img src = "clock.png"
                     height="20px" width="20px">
-                  9:00am - 11:00am <br>
+                  08:00am - 7:00pm <br>
                 </div>
                 <div id = "smalltext">
-                  fjoiejo irejfrio3r43t45t54jgoewfe tier<br>
-                  fjoiejoirerew twersfgsdgffsdgsgj friojgoier<br>
-                  fjewojfoer wefvwergvrjfoerjgfoer<br><br>
+                  From hands-on patient care to administrative support, 
+                  at the Speak Animal Hospital, there is a volunteer opportunity 
+                  for everyone.<br><br>
                 </div>
                 <div align = "center">
                   <a href="#" class="button">Sign Up</a>
                 </div>
             </div>
-
-            <div class = "posts"  style="
-            margin: 2rem 2rem 2rem 2rem;">
-              <img src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEWAgIB7e3vCwsLIyMjPz8/V1dV4eHjc3Nzj4+PMzMzt7e1zc3O/v7/////39/fx8fHg4ODJbms7AAABaElEQVR4nO3dSWrDABBFQcm2PMkZ7n/aaJFNiCEmZOBJVSf4b9/Qw9Pzy/V8Pp8W0+Lw7rL/YPd9+y9dDo+YHnH65DpM8/Ge8S/dXfAz5tswHYc1G3cK65bCg8I2hX0K+xT2KexT2LcUXsb/HvGrlsK9wjaFfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9h3yYKdwrbFPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2LeJiyGFcQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2baJw/T9K1v9nRmGcwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8K+pXBS2KawT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insG8ThSeFbQr7FPYp7FPYp7BPYZ/Cvm0UzuOazbfhetut2e31DZx9EnazzT4gAAAAAElFTkSuQmCC"
-              width="100%" height="150px" style="border-radius: 5px;"><br><br>
-                <div id = "text">Feeding Puppies! <br></div>
-                <div id = "subtext">
-                  <img src = "location.png"
-                    height="20px" width="20px">
-                  1200 Vestal Pkwy E, Binghamton, NY 13902 <br>
-                  <img src = "clock.png"
-                    height="20px" width="20px">
-                  9:00am - 11:00am <br>
-                </div>
-                <div id = "smalltext">
-                  fjoiejo irejfrio3r43t45t54jgoewfe tier<br>
-                  fjoiejoirerew twersfgsdgffsdgsgj friojgoier<br>
-                  fjewojfoer wefvwergvrjfoerjgfoer<br><br>
-                </div>
-                <div align = "center">
-                  <a href="#" class="button">Sign Up</a>
-                </div>
-            </div><br>
       
         </div>
 
