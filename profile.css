@@ -26,8 +26,10 @@ html {
   /* Create two equal columns that floats next to each other */
 .column {
     float: left;
-    width: 50%;
-    padding: 10px;
+    width: 60%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
   }
   
   /* Clear floats after the columns */
@@ -57,6 +59,7 @@ html {
 .content{
     background-color: white;
     border-radius: 15px;
+    border: 1px solid #ccc;
     margin-top: 1rem;
     margin-bottom: 1rem;
     max-height: 100%;

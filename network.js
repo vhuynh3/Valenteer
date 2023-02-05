@@ -10,7 +10,7 @@ Highcharts.chart('container', {
   },
 
   title: {
-    text: 'My Interests in Common',
+    text: 'Common Interests',
     style: {
       textDecoration: 'underline',
       fontFamily: 'Poppins',
@@ -49,11 +49,11 @@ Highcharts.chart('container', {
       ['Me', 'Homelessness'],
       ['Me', 'Animal Care'],
       ['Me', 'Education'],
-      ['Viera', 'Plastic Pollution'],
-      ['Viera', 'Animal Care'],
-      ['Viera', 'Hunger'],
-      ['Ethan', 'Animal Care'],
-      ['Ethan', 'Homelessness'],
+      ['Sara', 'Plastic Pollution'],
+      ['Sara', 'Animal Care'],
+      ['Sara', 'Hunger'],
+      ['Vivian', 'Animal Care'],
+      ['Vivian', 'Homelessness'],
 
       // ['', '']
     ],
@@ -64,13 +64,13 @@ Highcharts.chart('container', {
         radius: 35
       }
     }, {
-      id: 'Viera',
+      id: 'Sara',
       color: friendColor,
       marker: {
         radius: 25
       }
     }, {
-      id: 'Ethan',
+      id: 'Vivian',
       color: friendColor,
       marker: {
         radius: 25
