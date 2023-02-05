@@ -59,19 +59,23 @@ html {
 }
 
 .checks {
-  font-size: 30px;  
-  border: none;
-  outline: none;
   color: #643C16;
-  /* padding: 14px 16px; */
-  background-color: inherit;
+  font-size: 30px;  
   font-family: inherit;
+  background-color: inherit;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  padding: 6px 8px;
   margin: 0;
 }
 .checks:hover {
   background-color: #fefee3;
 }
 
+.friends .interests {
+  overflow: scroll;
+}
 /* li{
   width: 180px;
   border-radius: 10px;
