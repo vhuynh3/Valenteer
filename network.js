@@ -6,12 +6,11 @@ Highcharts.chart('container', {
 
   chart: {
     type: 'networkgraph',
-    // marginTop: 80,
     plotBorderWidth: 2
   },
 
   title: {
-    text: ''
+    text: 'What I Like'
   },
 
   // subtitle: {
@@ -22,7 +21,7 @@ Highcharts.chart('container', {
     networkgraph: {
       keys: ['from', 'to'],
       layoutAlgorithm: {
-        enableSimulation: false,
+        enableSimulation: true,
         integration: 'verlet',
         linkLength: 100
       }
@@ -78,6 +77,7 @@ Highcharts.chart('container', {
     }, {
       id: 'Animal Care',
       color: interestColor
+      
     }, {
       id: 'Plastic Pollution',
       color: interestColor
